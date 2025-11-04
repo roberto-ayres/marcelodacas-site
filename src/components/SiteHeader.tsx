@@ -17,7 +17,7 @@ export default function SiteHeader() {
   const [isOpen, setIsOpen] = useState(false)
 
   return (
-    <header className="border-b border-slate-200 bg-white/95 backdrop-blur">
+    <header className="relative border-b border-slate-200 bg-white/95 backdrop-blur">
       <div className="mx-auto flex h-16 max-w-5xl items-center justify-between px-4 sm:h-20 sm:px-6">
         {/* Logo */}
         <Link
@@ -74,10 +74,10 @@ export default function SiteHeader() {
         </button>
       </div>
 
-      {/* Menu mobile dropdown */}
+      {/* Menu mobile dropdown (sobreposto, vindo da direita) */}
       {isOpen && (
-        <div className="border-t border-slate-200 bg-white sm:hidden">
-          <nav className="mx-auto flex max-w-5xl flex-col px-4 py-2">
+        <div className="absolute right-0 top-full z-20 w-full border-t border-slate-200 bg-white/98 shadow-md sm:hidden">
+          <nav className="mx-auto flex max-w-5xl flex-col items-end px-4 py-2">
             {navLinks.map(link => {
               const active = pathname === link.href
 
@@ -93,7 +93,7 @@ export default function SiteHeader() {
                   }`}
                 >
                   <span
-                    className={`mr-2 h-1 w-1 rounded-full ${
+                    className={`mr-2 h-1.5 w-1.5 rounded-full ${
                       active ? 'bg-orange-400' : 'bg-transparent'
                     }`}
                   />
