@@ -61,7 +61,7 @@ export default function ContactPage() {
               <strong>E-mail:</strong>{' '}
               <a
                 href="mailto:contato@marcelodacas.com.br"
-                className="text-blue-600 hover:text-blue-800 underline-offset-2 hover:underline cursor-pointer"
+                className="text-blue-600 hover:text-blue-800 font-normal hover:font-semibold underline-offset-2 hover:underline cursor-pointer transition-all"
               >
                 contato@marcelodacas.com.br
               </a>
