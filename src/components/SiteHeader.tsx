@@ -25,7 +25,7 @@ export default function SiteHeader() {
         scrolled ? 'shadow-[0_1px_0_0_var(--color-mist),0_8px_24px_-16px_rgba(0,0,0,0.25)]' : 'shadow-[0_1px_0_0_var(--color-mist)]'
       }`}
     >
-      <div className="mx-auto flex h-20 max-w-6xl items-center justify-between px-5 sm:px-8">
+      <div className="mx-auto flex h-20 max-w-6xl items-center justify-between px-5 sm:px-8 md:h-24">
         <Link href="/" className="flex items-center gap-3" onClick={() => setIsOpen(false)}>
           <Image
             src="/logo-dacas.png"
@@ -33,7 +33,7 @@ export default function SiteHeader() {
             width={190}
             height={166}
             priority
-            className="h-14 w-auto"
+            className="h-16 w-auto md:h-20"
           />
           <span className="sr-only">{site.name}</span>
         </Link>
