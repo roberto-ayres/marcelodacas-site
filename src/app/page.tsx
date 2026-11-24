@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import { CtaBand, SectionTitle } from '@/components/PageSection'
 import Icon, { WhatsAppIcon } from '@/components/Icon'
 import { practiceAreas, site } from '@/lib/site'
@@ -86,13 +87,18 @@ export default function HomePage() {
             </div>
           </div>
 
-          {/* Cartão do advogado (trocar o monograma pela foto quando chegar) */}
-          <aside className="self-start lg:mt-4">
+          {/* Cartão do advogado */}
+          <aside className="mx-auto w-full max-w-md self-start lg:mt-4 lg:max-w-none">
             <div className="overflow-hidden rounded-3xl bg-white shadow-[0_30px_60px_-30px_rgba(27,30,35,0.35)] ring-1 ring-mist">
-              <div className="hero-texture flex aspect-[4/3] items-center justify-center">
-                <span className="font-serif text-8xl font-semibold text-white/90">
-                  M<span className="text-brand">D</span>
-                </span>
+              <div className="relative aspect-square bg-ink">
+                <Image
+                  src="/marcelo-da-cas.webp"
+                  alt={`${site.lawyer}, advogado`}
+                  fill
+                  sizes="(min-width: 1024px) 420px, 100vw"
+                  className="object-cover object-center"
+                />
+                <span className="absolute inset-x-0 bottom-0 h-1 bg-brand" />
               </div>
               <div className="space-y-1 p-7">
                 <p className="text-xs font-semibold uppercase tracking-[0.2em] text-brand">Advogado responsável</p>
