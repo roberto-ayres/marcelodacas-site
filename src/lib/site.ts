@@ -6,7 +6,7 @@ export const site = {
   legalName: 'Esmerio Da Cas Sociedade Individual de Advocacia',
   lawyer: 'Marcelo Esmerio Da Cas',
   oab: 'OAB/RS nº 54.005',
-  url: 'https://marcelodacas.com.br',
+  url: 'https://www.marcelodacas.com.br',
   email: 'contato@marcelodacas.com.br',
   phoneDisplay: '(51) 99722-1500',
   phoneHref: 'tel:+5551997221500',
