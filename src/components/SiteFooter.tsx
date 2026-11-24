@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import { navLinks, site } from '@/lib/site'
 import Icon, { WhatsAppIcon } from './Icon'
 
@@ -7,9 +8,7 @@ export default function SiteFooter() {
     <footer className="bg-ink text-white/70">
       <div className="mx-auto grid max-w-6xl gap-10 px-5 py-14 sm:px-8 md:grid-cols-[1.4fr_1fr_1fr]">
         <div className="space-y-4">
-          <p className="font-serif text-3xl font-semibold tracking-wide text-white">
-            Da Cas <span className="text-brand">Advocacia</span>
-          </p>
+          <Image src="/logo-dacas-light.png" alt="Da Cas Advocacia" width={640} height={509} className="h-24 w-auto" />
           <p className="max-w-sm text-sm leading-relaxed">
             {site.legalName}
             <br />

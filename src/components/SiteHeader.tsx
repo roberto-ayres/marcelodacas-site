@@ -28,10 +28,10 @@ export default function SiteHeader() {
       <div className="mx-auto flex h-20 max-w-6xl items-center justify-between px-5 sm:px-8 md:h-24">
         <Link href="/" className="flex items-center gap-3" onClick={() => setIsOpen(false)}>
           <Image
-            src="/logo-dacas.png"
+            src="/logo-dacas-hd.png"
             alt="Da Cas Advocacia"
-            width={190}
-            height={166}
+            width={640}
+            height={509}
             priority
             className="h-16 w-auto md:h-20"
           />

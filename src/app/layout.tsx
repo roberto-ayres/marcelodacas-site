@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'pt_BR',
     siteName: site.name,
-    images: ['/logo-dacas.png'],
+    images: ['/logo-dacas-hd.png'],
   },
 }
 
@@ -42,7 +42,7 @@ const jsonLd = {
   url: site.url,
   email: site.email,
   telephone: '+55-51-99722-1500',
-  image: `${site.url}/logo-dacas.png`,
+  image: `${site.url}/logo-dacas-hd.png`,
   founder: { '@type': 'Person', name: site.lawyer, jobTitle: 'Advogado' },
 }
 
